@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url("ginger picture.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  text-align: center;
+  background-color: #fae32a;
+  padding: 20px;
+}
+
+.concert-flyer {
+  max-width: 100%;
+  height: auto;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.ticket-section {
+  margin-top: 20px;
+}
+
+.ticket-category {
+  margin-bottom: 15px;
+}
+
+.ticket-category label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ticket-category input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.buyer-details {
+  margin-top: 20px;
+}
+
+.buyer-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.buyer-details input,
+.buyer-details select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fae32a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.total-section {
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.total-section h2 {
+  font-size: 1.5rem;
+  color: #333;
+}

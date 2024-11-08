@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concert Ticket - PASLANmusic</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Ginger.css" />
+  </head>
+  <body>
+    <header>
+      <div class="flyer-header">
+        <img
+          src="ginger picture.jpg"
+          alt="Concert Flyer"
+          class="concert-flyer"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/PASLANmusic" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@PASLANmusic" target="_blank"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/PASLANmusic" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Concert Tickets</h1>
+      <p>Select your tickets and provide your details below</p>
+
+      <section class="ticket-section">
+        <form
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          id="ticket-form"
+        >
+          <div class="ticket-category">
+            <label for="regular">Regular Tickets (₦5,000)</label>
+            <input
+              type="number"
+              id="regular"
+              name="regular"
+              min="0"
+              value="0"
+            />
+          </div>
+
+          <div class="ticket-category">
+            <label for="vip">VIP Tickets (₦25,000)</label>
+            <input type="number" id="vip" name="vip" min="0" value="0" />
+          </div>
+
+          <div class="ticket-category">
+            <label for="vvip">VVIP Tickets (₦50,000)</label>
+            <input type="number" id="vvip" name="vvip" min="0" value="0" />
+          </div>
+
+          <div class="ticket-category">
+            <label for="family-table">Family Table (₦200,000)</label>
+            <input
+              type="number"
+              id="family-table"
+              name="family-table"
+              min="0"
+              value="0"
+            />
+          </div>
+
+          <div class="ticket-category">
+            <label for="gold">Gold Tickets (₦2,000,000)</label>
+            <input type="number" id="gold" name="gold" min="0" value="0" />
+          </div>
+
+          <div class="ticket-category">
+            <label for="platinum">Platinum Tickets (₦3,000,000)</label>
+            <input
+              type="number"
+              id="platinum"
+              name="platinum"
+              min="0"
+              value="0"
+            />
+          </div>
+
+          <h3>Your Details</h3>
+          <div class="buyer-details">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="social-media">Preferred Social Media:</label>
+            <select id="social-media" name="social-media" required>
+              <option value="Instagram">Instagram</option>
+              <option value="TikTok">TikTok</option>
+              <option value="YouTube">YouTube</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Twitter">Twitter</option>
+            </select>
+          </div>
+
+          <div class="upload-section">
+            <label for="payment-proof">Upload Payment Proof:</label>
+            <input
+              type="file"
+              id="payment-proof"
+              name="payment-proof"
+              required
+            />
+          </div>
+
+          <button type="button" onclick="calculateTotal()">
+            Calculate Total
+          </button>
+
+          <div class="total-section">
+            <h2>Total Amount: ₦<span id="total-amount">0</span></h2>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="contact-section">
+        <h3>For More Information, Call Us:</h3>
+        <p>Phone: +234 123 456 7890</p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

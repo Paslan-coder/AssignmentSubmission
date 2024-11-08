@@ -1,0 +1,115 @@
+/* universal selector */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  padding: 0px 15%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  margin-left: 10px;
+}
+nav a {
+  color: #232057;
+  text-decoration: none;
+}
+nav li:nth-last-child(2) a {
+  background-color: #232057;
+  color: white;
+  padding: 5px;
+}
+nav li:last-child a {
+  background-color: #232057;
+  color: white;
+  padding: 5px;
+}
+section {
+  display: flex;
+}
+main {
+  width: 65%;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+main h1 {
+  margin-bottom: 20px;
+}
+main article {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+main article p {
+  margin: 10px 0px;
+}
+main article a {
+  background-color: #232057;
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+}
+aside {
+  width: 35%;
+  margin-top: 20px;
+}
+
+aside form {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+aside form input,
+aside form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+}
+aside form button {
+  width: 100%;
+  cursor: pointer;
+  background-color: #232057;
+  color: white;
+  border: none;
+  padding: 7px;
+}
+aside ul {
+  list-style-type: none;
+  background-color: white;
+  padding: 10px;
+}
+aside ul li {
+  padding: 5px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+aside ul li:last-child {
+  border-bottom: none;
+}
+footer {
+  background-color: #232057;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+footer a {
+  color: white;
+}

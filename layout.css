@@ -1,0 +1,35 @@
+/* css layout */
+/* 
+
+1) float
+2) flex
+3) grid 
+
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 20px 5%;
+  background-color: whitesmoke;
+}
+
+.left {
+  float: left;
+  width: 70%;
+  padding: 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+.right {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid black;
+}
+p {
+  clear: both;
+}

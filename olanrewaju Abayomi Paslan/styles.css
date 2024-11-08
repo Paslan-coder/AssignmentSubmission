@@ -1,0 +1,29 @@
+.Paslan {
+  width: 100px;
+}
+ul {
+  display: flex;
+}
+ul li {
+  display: flex;
+  float: right;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: brown;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  margin-left: 10px;
+}
+.paslan {
+  position: relative;
+  right: 100px;
+}

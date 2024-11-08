@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  background-color: blueviolet;
+}
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h1 {
+  text-align: center;
+  background-color: rgb(220, 23, 72) (180, 47%, 67%);
+  font-style: calc(50);
+}
+h3 {
+  color: rgb(8, 0, 2);
+}
+.navbar ul {
+  list-style-type: none;
+  background-color: hsl(261, 88%, 48%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a {
+  color: rgb(6, 3, 3);
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: hsl(0, 0%, 10%);
+}
+.navbar li {
+  float: left;
+}
+img {
+  align-items: center;
+}
